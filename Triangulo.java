@@ -4,14 +4,17 @@ class Triangulo {
 
 	public static void main (String args []){
 		
-		int base, altura,resultado;
+		int base, altura;
+		double resultado;
 
 		base = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da base"));
 		altura = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da altura"));
 
-		resultado = (base * altura)/2;
+		// 2d para indicar que o valor pode ser decimal
+		resultado = (base * altura)/2d;
 
-		System.out.println("O varlo do Triângulo é " + resultado);
+		// %.2f\n para indicar que o valor da variavel pode ter duas casas decimais
+		System.out.println("O varlo do Triângulo é %.2f\n " + resultado);
 
 	}
 }
